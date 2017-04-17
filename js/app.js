@@ -60,7 +60,7 @@ var Player = function() {
     this.ini_x = 200; // init:200
     //this.ini_x=400;
     this.ini_y = 390; //init:390//235 - 155 = ? 80
-    this.x = this.ini_x; // should we initialize it to 1 or what ?
+    this.x = this.ini_x;
     this.y = this.ini_y;
     //this.score=0;
     if (score <= 0) {
@@ -89,7 +89,7 @@ Player.prototype.update = function(dt) {
     if (this.y < 70) { //if the player wins
       this.y = this.ini_y;
       this.x = this.ini_x;
-      score = score + 1;
+      score += 1;
     }
 
     document.getElementById('score').innerHTML = score; //sets the score to the screen
@@ -113,12 +113,7 @@ Player.prototype.handleInput = function(key) {
 
 };
 
-Player.prototype.reset = function() {
-    this.x = this.ini_y;
-    this.y = this.ini_x;
-    this.render();
 
-};
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
