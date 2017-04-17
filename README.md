@@ -16,3 +16,5 @@ just open index.html using your browser.
 
 -Move the boy using your keyboard arrows.
 -reach the river without getting hit by bugs.
+
+Many thanks to my sister NOHA
